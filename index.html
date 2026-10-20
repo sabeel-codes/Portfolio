@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>M. Sabeel | Frontend Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- EmailJS library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"
+      defer
+    ></script>
+
+    <!-- Our JavaScript -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#home" class="logo" aria-label="M. Sabeel home">
+          Sabeel<span>.</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#projects" class="nav-link">Projects</a>
+
+          <a href="#contact" class="nav-contact">
+            Let's Talk <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-inner container">
+          <div class="hero-content">
+            <p class="hero-eyebrow">
+              <span class="status-dot" aria-hidden="true"></span>
+              FRONTEND DEVELOPER · PAKISTAN
+            </p>
+
+            <h1>
+              Hey, I'm M. Sabeel.
+              <br />
+              <span class="text-accent">Frontend Developer.</span>
+            </h1>
+
+            <p class="hero-description">
+              I create responsive, user-friendly websites using HTML, CSS and
+              JavaScript. I'm expanding my backend skills through practical
+              projects and learning PHP and MySQL.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                View My Projects <span aria-hidden="true">↘</span>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                Contact Me <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://github.com/sabeel-codes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub <span aria-hidden="true">↗</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/muhammad-sabeel-752836443/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-orbit orbit-one"></div>
+            <div class="visual-orbit orbit-two"></div>
+
+            <div class="code-card">
+              <div class="code-card-header">
+                <div class="window-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <span>developer.js</span>
+              </div>
+
+              <div class="code-content">
+                <p>
+                  <span class="code-line">01</span>
+                  <span class="code-purple">const</span>
+                  <span class="code-white"> developer</span> = {
+                </p>
+
+                <p>
+                  <span class="code-line">02</span>
+                  &nbsp; name:
+                  <span class="code-green">"Sabeel"</span>,
+                </p>
+
+                <p>
+                  <span class="code-line">03</span>
+                  &nbsp; focus:
+                  <span class="code-green">"Frontend"</span>,
+                </p>
+
+                <p>
+                  <span class="code-line">04</span>
+                  &nbsp; mindset:
+                  <span class="code-green">"Keep learning"</span>,
+                </p>
+
+                <p>
+                  <span class="code-line">05</span>
+                  &nbsp; building:
+                  <span class="code-purple">true</span>
+                </p>
+
+                <p>
+                  <span class="code-line">06</span>
+                  };
+                </p>
+              </div>
+
+              <div class="code-card-footer">
+                <span>BUILD · LEARN · IMPROVE</span>
+                <span class="text-accent">✳</span>
+              </div>
+            </div>
+
+            <div class="floating-label label-one">01 / CREATIVE THINKING</div>
+
+            <div class="floating-label label-two">02 / CONTINUOUS GROWTH</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="about section" id="about">
+        <div class="container about-container">
+          <div class="section-heading about-heading">
+            <p class="section-eyebrow">BEHIND THE CODE</p>
+
+            <h2>
+              Learning by building.
+              <span class="text-accent">Growing with every project.</span>
+            </h2>
+
+            <p class="section-intro">
+              Every project is an opportunity to learn something new and turn
+              ideas into practical web experiences.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <!-- About Text -->
+            <div class="about-copy">
+              <h3 class="about-copy-heading">
+                A little about my <span>journey.</span>
+              </h3>
+              <p>
+                I'm M. Sabeel, an aspiring web developer from Pakistan. I enjoy
+                building responsive, user-friendly websites and exploring how
+                design and code work together.
+              </p>
+
+              <p>
+                My current focus is HTML, CSS and JavaScript. While building a
+                clinic website, I've also been developing my understanding of
+                PHP, MySQL and backend functionality.
+              </p>
+
+              <p>
+                My next goal is to gain practical experience through a web
+                development internship, learn from experienced developers and
+                continue growing toward full-stack development.
+              </p>
+            </div>
+
+            <!-- Quick Profile Card -->
+            <aside class="about-card" aria-label="Quick profile details">
+              <div class="about-card-header">
+                <span class="card-label">PROFILE / 01</span>
+                <span class="profile-initials">Sabeel.</span>
+              </div>
+
+              <div class="about-detail">
+                <span>Current Focus</span>
+                <strong>Frontend Development</strong>
+              </div>
+
+              <div class="about-detail">
+                <span>Education</span>
+                <strong>DAE in Information Technology</strong>
+              </div>
+
+              <div class="about-detail">
+                <span>Next Goal</span>
+                <strong>Web Development Internship</strong>
+              </div>
+
+              <div class="about-detail">
+                <span>Long-Term Direction</span>
+                <strong>Full-Stack Development</strong>
+              </div>
+
+              <div class="about-card-footer">
+                <span class="status-dot" aria-hidden="true"></span>
+                Always learning. Always improving.
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <div class="section-heading skills-heading">
+            <p class="section-eyebrow">MY TOOLKIT</p>
+
+            <h2>
+              Skills I'm
+              <span class="text-accent">building.</span>
+            </h2>
+
+            <p class="section-intro">
+              Technologies I'm using and learning through hands-on practice and
+              real web development projects.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- HTML -->
+            <article class="skill-card">
+              <div class="skill-icon">H5</div>
+
+              <h3>HTML5</h3>
+
+              <p>
+                Creating structured web pages using semantic HTML and accessible
+                content elements.
+              </p>
+
+              <span class="skill-type">FRONTEND</span>
+            </article>
+
+            <!-- CSS -->
+            <article class="skill-card">
+              <div class="skill-icon">C3</div>
+
+              <h3>CSS3</h3>
+
+              <p>
+                Building responsive layouts, polished designs, animations and
+                interactive hover effects.
+              </p>
+
+              <span class="skill-type">FRONTEND</span>
+            </article>
+
+            <!-- JavaScript -->
+            <article class="skill-card">
+              <div class="skill-icon">JS</div>
+
+              <h3>JavaScript</h3>
+
+              <p>
+                Practising DOM manipulation, event handling, loops, functions
+                and interactive features.
+              </p>
+
+              <span class="skill-type">LEARNING &amp; BUILDING</span>
+            </article>
+
+            <!-- PHP -->
+            <article class="skill-card">
+              <div class="skill-icon">PHP</div>
+
+              <h3>PHP</h3>
+
+              <p>
+                Learning server-side programming by building backend features
+                for practical web projects.
+              </p>
+
+              <span class="skill-type">BACKEND LEARNING</span>
+            </article>
+
+            <!-- MySQL -->
+            <article class="skill-card">
+              <div class="skill-icon">SQL</div>
+
+              <h3>MySQL</h3>
+
+              <p>
+                Learning relational databases, SQL queries and storing website
+                contact information.
+              </p>
+
+              <span class="skill-type">DATABASE LEARNING</span>
+            </article>
+
+            <!-- Git and GitHub -->
+            <article class="skill-card">
+              <div class="skill-icon">GH</div>
+
+              <h3>Git &amp; GitHub</h3>
+
+              <p>
+                A toolset to learn for tracking code changes and sharing
+                projects through repositories.
+              </p>
+
+              <span class="skill-type">TOOLS TO DEVELOP</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section class="education section" id="education">
+        <div class="container">
+          <div class="section-heading education-heading">
+            <p class="section-eyebrow">MY ACADEMIC JOURNEY</p>
+
+            <h2>
+              Education &amp;
+              <span class="text-accent">growth.</span>
+            </h2>
+
+            <p class="section-intro">
+              My academic background and the next steps in my software
+              development journey.
+            </p>
+          </div>
+
+          <div class="education-grid">
+            <!-- Matriculation -->
+            <article class="education-card">
+              <div class="education-top">
+                <span class="education-index">01</span>
+                <span class="education-status">COMPLETED</span>
+              </div>
+
+              <p class="education-level">SCHOOL EDUCATION</p>
+
+              <h3>Matriculation</h3>
+
+              <p class="education-institute">Govt. Boys High School Beor</p>
+
+              <p class="education-description">
+                Completed my matriculation before moving on to technical
+                education in Information Technology.
+              </p>
+            </article>
+
+            <!-- DAE -->
+            <article class="education-card education-card-highlight">
+              <div class="education-top">
+                <span class="education-index">02</span>
+                <span class="education-status">COMPLETED</span>
+              </div>
+
+              <p class="education-level">DIPLOMA</p>
+
+              <h3>DAE in Information Technology</h3>
+
+              <p class="education-institute">Kahuta Institute of Technology</p>
+
+              <p class="education-description">
+                Completed a Diploma of Associate Engineering in Information
+                Technology, developing a foundation in computing and technical
+                skills.
+              </p>
+            </article>
+
+            <!-- BS Software Engineering -->
+            <article class="education-card">
+              <div class="education-top">
+                <span class="education-index">03</span>
+                <span class="education-status">ADMISSION ACCEPTED</span>
+              </div>
+
+              <p class="education-level">BACHELOR'S DEGREE</p>
+
+              <h3>BS Software Engineering</h3>
+
+              <p class="education-institute">Virtual University of Pakistan</p>
+
+              <p class="education-description">
+                Admission accepted for BS Software Engineering at Virtual
+                University of Pakistan, with the goal of strengthening my
+                knowledge of programming, software development and computer
+                science.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <!-- Section Heading -->
+          <div class="section-heading projects-heading">
+            <p class="section-eyebrow">SELECTED WORK / 01—05</p>
+
+            <h2>
+              Turning ideas into
+              <span class="text-accent">real projects.</span>
+            </h2>
+
+            <p class="section-intro">
+              A collection of practical web projects built to strengthen my
+              development skills, explore new ideas and solve problems.
+            </p>
+          </div>
+
+          <!-- Project Cards -->
+          <div class="projects-grid">
+            <!-- Project 1: Clinic Website -->
+            <article class="project-card project-featured">
+              <div class="project-preview preview-clinic">
+                <span class="preview-label">FEATURED PROJECT</span>
+
+                <div class="clinic-preview-window">
+                  <div class="preview-browser-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <div class="clinic-preview-content">
+                    <div class="clinic-preview-logo">H<span>.</span></div>
+
+                    <div class="clinic-preview-line wide"></div>
+                    <div class="clinic-preview-line short"></div>
+
+                    <div class="clinic-preview-button"></div>
+
+                    <div class="clinic-preview-panels">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+
+                <span class="preview-number">01</span>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta">
+                  <span>FULL WEBSITE</span>
+                  <span>PHP / MYSQL</span>
+                </div>
+
+                <h3>Huziafa Health Care Center</h3>
+
+                <p>
+                  A responsive clinic website with a contact form and an admin
+                  dashboard for managing patient inquiries, reading messages and
+                  deleting records.
+                </p>
+
+                <ul class="project-tags" aria-label="Technologies used">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                </ul>
+
+                <p class="project-status">Built locally · Demo link pending</p>
+              </div>
+            </article>
+
+            <!-- Project 2: Analog Clock -->
+            <article class="project-card">
+              <div class="project-preview preview-clock">
+                <span class="preview-label">INTERACTIVE UI</span>
+
+                <div class="clock-preview-face">
+                  <span class="clock-number number-12">12</span>
+                  <span class="clock-number number-3">3</span>
+                  <span class="clock-number number-6">6</span>
+                  <span class="clock-number number-9">9</span>
+
+                  <span class="clock-hand hour-hand"></span>
+                  <span class="clock-hand minute-hand"></span>
+                  <span class="clock-hand second-hand"></span>
+                  <span class="clock-center"></span>
+                </div>
+
+                <span class="preview-number">02</span>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta">
+                  <span>JAVASCRIPT PROJECT</span>
+                  <span>BUILT</span>
+                </div>
+
+                <h3>Analog Clock</h3>
+
+                <p>
+                  A planned clock interface with a custom clock face, moving
+                  hands and real-time timekeeping.
+                </p>
+
+                <ul class="project-tags" aria-label="Planned technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+
+                <div class="project-links">
+                  <a
+                    href="https://sabeel-codes.github.io/analog-clock/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/sabeel-codes/analog-clock"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Repo ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Calculator -->
+            <article class="project-card">
+              <div class="project-preview preview-calculator">
+                <span class="preview-label">JAVASCRIPT LOGIC</span>
+
+                <div class="calculator-preview">
+                  <div class="calculator-screen">123.45</div>
+
+                  <div class="calculator-buttons">
+                    <span>C</span>
+                    <span>÷</span>
+                    <span>×</span>
+                    <span>−</span>
+
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>+</span>
+
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>=</span>
+                  </div>
+                </div>
+
+                <span class="preview-number">03</span>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta">
+                  <span>FRONTEND PROJECT</span>
+                  <span>BUILT</span>
+                </div>
+
+                <h3>Interactive Calculator</h3>
+
+                <p>
+                  A browser-based calculator created to practise JavaScript
+                  event handling, input processing and calculation logic.
+                </p>
+
+                <ul class="project-tags" aria-label="Technologies used">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+
+                <div class="project-links">
+                  <a
+                    href="https://sabeel-codes.github.io/Calculator-/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/sabeel-codes/Calculator-"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Repo ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Rock Paper Scissors -->
+            <article class="project-card">
+              <div class="project-preview preview-rps">
+                <span class="preview-label">GAME DEVELOPMENT</span>
+
+                <div class="rps-preview-content">
+                  <p>MAKE YOUR MOVE</p>
+
+                  <div class="rps-choices">
+                    <span>✊</span>
+                    <span>✋</span>
+                    <span>✌</span>
+                  </div>
+
+                  <span class="rps-vs">PLAYER VS COMPUTER</span>
+                </div>
+
+                <span class="preview-number">04</span>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta">
+                  <span>INTERACTIVE GAME</span>
+                  <span>BUILT</span>
+                </div>
+
+                <h3>Rock Paper Scissors</h3>
+
+                <p>
+                  A planned browser game featuring player choices,
+                  computer-generated moves, score tracking and game results.
+                </p>
+
+                <ul class="project-tags" aria-label="Planned technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+
+                <div class="project-links">
+                  <a
+                    href=" https://sabeel-codes.github.io/Rock-Paper-Scissor-game/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/sabeel-codes/Rock-Paper-Scissor-game"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Repo ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5: Tic Tac Toe -->
+            <article class="project-card">
+              <div class="project-preview preview-tictactoe">
+                <span class="preview-label">GAME DEVELOPMENT</span>
+
+                <div class="tic-tac-toe-grid">
+                  <span class="tic-x">X</span>
+                  <span></span>
+                  <span class="tic-o">O</span>
+
+                  <span class="tic-o">O</span>
+                  <span class="tic-x">X</span>
+                  <span></span>
+
+                  <span></span>
+                  <span class="tic-x">X</span>
+                  <span class="tic-o">O</span>
+                </div>
+
+                <span class="preview-number">05</span>
+              </div>
+
+              <div class="project-body">
+                <div class="project-meta">
+                  <span>INTERACTIVE GAME</span>
+                  <span>BUILT</span>
+                </div>
+
+                <h3>Tic-Tac-Toe</h3>
+
+                <p>
+                  A two-player Tic-Tac-Toe game featuring turn management, win
+                  detection, and a restart option.
+                </p>
+
+                <ul class="project-tags" aria-label="Technologies used">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+
+                <div class="project-links">
+                  <a
+                    href="https://sabeel-codes.github.io/tic-tac-toe/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/sabeel-codes/tic-tac-toe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Repo ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME SECTION -->
+      <section class="resume-section section" id="resume">
+        <div class="container">
+          <div class="resume-panel">
+            <div class="resume-content">
+              <p class="section-eyebrow">THE NEXT CHAPTER</p>
+
+              <h2>
+                Ready to learn.
+                <span class="text-accent">Ready to contribute.</span>
+              </h2>
+
+              <p class="resume-description">
+                I'm looking for a web development internship where I can apply
+                my current skills, learn from experienced developers and grow
+                through practical work.
+              </p>
+
+              <div class="resume-actions">
+                <a href="#contact" class="btn btn-primary">
+                  Let's Connect <span aria-hidden="true">↗</span>
+                </a>
+
+                <a
+                  href="assets/Muhammad-Sabeel-Resume.docx"
+                  class="btn btn-primary"
+                  download
+                >
+                  Download Resume <span aria-hidden="true">↓</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="resume-visual" aria-hidden="true">
+              <div class="resume-document">
+                <div class="resume-document-header">
+                  <span>MS.</span>
+                  <span>PROFILE / CV</span>
+                </div>
+
+                <div class="resume-document-line line-name"></div>
+                <div class="resume-document-line line-role"></div>
+
+                <div class="resume-document-divider"></div>
+
+                <span class="resume-document-label"
+                  >SKILLS &amp; EXPERIENCE</span
+                >
+
+                <div class="resume-document-line line-wide"></div>
+                <div class="resume-document-line line-medium"></div>
+                <div class="resume-document-line line-short"></div>
+
+                <div class="resume-document-footer">
+                  <span>LEARN</span>
+                  <span>BUILD</span>
+                  <span>GROW</span>
+                </div>
+              </div>
+
+              <span class="resume-visual-tag">YOUR NEXT OPPORTUNITY ↗</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="section-heading contact-heading">
+            <p class="section-eyebrow">LET'S CONNECT</p>
+
+            <h2>
+              Let's start a
+              <span class="text-accent">conversation.</span>
+            </h2>
+
+            <p class="section-intro">
+              Interested in working together or offering an internship
+              opportunity? I'd be glad to hear from you.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Contact Information -->
+            <div class="contact-info">
+              <p class="contact-intro">
+                I'm focused on improving my web development skills and gaining
+                practical experience. Feel free to get in touch.
+              </p>
+
+              <div class="contact-info-item">
+                <span class="contact-label">EMAIL</span>
+                <p>msabeel.web@gmail.com</p>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-label">LOCATION</span>
+                <p>Kahuta, Pakistan</p>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="contact-label">LOOKING FOR</span>
+                <p>Web Development Internship</p>
+              </div>
+
+              <div class="contact-socials">
+                <a
+                  href="https://github.com/sabeel-codes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub ↗
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/muhammad-sabeel-752836443/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn ↗
+                </a>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <label for="contactName">
+                  Your Name
+                  <input
+                    type="text"
+                    id="contactName"
+                    name="name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    required
+                  />
+                </label>
+
+                <label for="contactEmail">
+                  Your Email
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+              </div>
+
+              <label for="contactSubject">
+                Subject
+                <input
+                  type="text"
+                  id="contactSubject"
+                  name="subject"
+                  placeholder="What would you like to discuss?"
+                  required
+                />
+              </label>
+
+              <label for="contactMessage">
+                Message
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </label>
+
+              <button
+                type="submit"
+                class="btn btn-primary contact-submit"
+                id="contactSubmit"
+              >
+                Send Message <span aria-hidden="true">↗</span>
+              </button>
+              <p class="form-note" id="formNote">
+                Have a question or internship opportunity? Send me a message.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="#home" class="logo" aria-label="Back to home">
+          Sabeel<span>.</span>
+        </a>
+
+        <p class="footer-message">Designed &amp; built by M. Sabeel.</p>
+
+        <a href="#home" class="back-to-top">
+          Back to top <span aria-hidden="true">↑</span>
+        </a>
+
+        <div class="footer-bottom">
+          <p>© 2026 M. Sabeel. All rights reserved.</p>
+          <p>Built with HTML, CSS &amp; JavaScript.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
